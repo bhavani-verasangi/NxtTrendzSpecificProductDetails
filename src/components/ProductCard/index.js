@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import './index.css'
 
 const ProductCard = props => {
@@ -5,7 +6,6 @@ const ProductCard = props => {
   const {title, brand, imageUrl, rating, price} = productData
 
   return (
-    //   Wrap with Link from react-router-dom
     <li className="product-item">
       <Link to={`/products/${id}`} className="link-item">
         <img src={imageUrl} alt="product" className="thumbnail" />
